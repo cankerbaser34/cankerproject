@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/nysl_2.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+<title>RegistrationNYSL</title>
+</head>
+<body>
+
+    <header class="bannerup">
+            <h1 class="bannertext">Northside Youth Soccer League</h1>
+            <img id="nysllogo" src="./photos/nysl_logo.png" alt="">
+    </header>
+        
+    <nav id="navbar" >
+       <ul>
+           <li><a href="indexnysl.html">Home</a></li>
+           <li><a href="">AboutNYSL</a></li>
+           <li><a href="contactnysl.html">Contact</a></li>
+           <li><a href="gameinfonysl.html">Game Info</a></li>
+           <li><a href="rulesnysl.html">Nsyl Rules</a></li>
+           <li><a class="active" href="registrationnysl.html">Registration Form</a></li>
+       </ul>
+    </nav>
+
+  <main class="regcontent">
+     <form class="registerform" method="get" action="show_data.html">
+
+    <div class="firstregpart">
+      <div class="arrange">
+          <label class="halfwide">Player’s First Name:<input type="text" name=" First Name" required=""> </label>
+          <label class="halfwide secondhalf">Last Name:<input type="text" name="Last Name" required=""> </label>
+      </div>
+      <div class="fullinput arrange">
+         <label for="adress">Street Address:<input type="text" name="street" id="adress"></label>
+      </div>
+
+    <div class="arrange">
+      <label class="halfwide">City:<input type="text" name="City"> </label>
+      <label class="halfwide secondhalf">Zip Code:<input type="text" name="Zip Code:"> </label>
+    </div>
+
+    <div class="arrange">
+      Birth Date (dd/mm/yyyy):<input class="bdate" type="date" name="birth date">
+      <label class="gendermf"> Gender: <input type="radio" name="gender" value="Female">Female</label>
+              <label> <input type="radio" name="gender" value="Male">Male</label>
+    </div>
+
+    <div class="arrange">
+        <label>Grade:<input type="radio" name="grade" value="Pre-School">Pre-School</label>
+        <input type="radio" name="grade" value="first">1<sup>st</sup>
+        <input type="radio" name="grade" value="second">2<sup>nd</sup>
+        <input type="radio" name="grade" value="third">3<sup>rd</sup>
+        <input type="radio" name="grade" value="fourth">4<sup>th</sup>
+        <input type="radio" name="grade" value="fifth">5<sup>th</sup>
+    </div>
+
+   <div class="fullinput arrange">
+      <label>Street Address:<input type="text" name="street_address" required=""></label> 
+    </div>
+                 
+      <div class="arrange">
+       <label class="halfwide"> Contact Phone:<input type="tel" placeholder="Enter Phone number" name="phone" id="phone"></label>
+         <label class="halfwide secondhalf">Contact Email:<input type="email" placeholder="Enter email adress" name="email" id="email"></label> 
+      </div>
+    </div>  
+    <fieldset class="fieldarrange">
+        <legend class="permission"><strong>Which elementary schools do you live near?</strong> </legend>
+        <div class="sizehead sizeheader">
+              <p><strong>First Closest School:</strong></p>
+              <p class="secheader"><strong>Second Closest School:</strong></p>
+      </div>
+  
+    <div class="rowschool">
+       <div class="partschool">
+         <span><input type="radio" name="First Closest School" value="AJ Katzenmaier">AJ Katzenmaier</span>
+         <span><input type="radio" name="First Closest School" value="Greenbay">Greenbay</span>
+         <span><input type="radio" name="First Closest School" value="Howard A Yeager">Howard A Yeager</span>
+        </div>
+
+    <div class="partschool">
+         <span><input type="radio" name="First Closest School" value="Marjorie P Hart">Marjorie P Hart</span>
+         <span> <input type="radio" name="First Closest School" value="North Elementary">North Elementary</span>
+         <span><input type="radio" name="First Closest School" value="South Elementary">South Elementary</span>
+    </div>
+
+    <div class="partschool">
+        <span><input type="radio" name="Second Closest School" value="AJ Katzenmaier">AJ Katzenmaier</span>
+        <span><input type="radio" name="Second Closest School" value="Greenbay">Greenbay</span>
+        <span><input type="radio" name="Second Closest School" value="Howard A Yeager">Howard A Yeager</span>
+    </div>
+      <div class="partschool">
+        <span><input type="radio" name="Second Closest School" value="Marjorie P Hart">Marjorie P Hart</span>
+        <span> <input type="radio" name="First Closest School" value="North Elementary">North Elementary</span>
+        <span><input type="radio" name="First Closest School" value="South Elementary">South Elementary</span>  
+      </div>  
+    </fieldset>  
+    </div>         
+        <fieldset class="fieldarrange">
+         <legend class="permission"><strong>What position(s) do you want to play? </strong> </legend>
+         <div class="rowschool">
+             <div class="partschool">
+             <span><input type="checkbox">Forward</span>
+             <span><input type="checkbox">Defense</span>
+          </div>
+           <div class="partschool partposition">
+              <span><input type="checkbox">Midfield</span>
+              <span><input type="checkbox">Goalkeeper</span>
+           </div>
+        </fieldset> 
+      </div>
+
+      <fieldset class="fieldarrange">
+          <legend class="permission"><strong>Uniform </strong> </legend>
+
+         <input type="checkbox"><strong>Already Have a Uniform</strong>        
+           
+    <div class="sizeheader">
+      <p class="js"><strong>Jersey Size:</strong></p>
+      <p class="ss"><strong>Shorts Size:</strong></p>
+    </div>
+      <div class="rowschool">
+          <div class="partschool">
+            <span><input type="radio" name="Jersey size" value="Youth Small">Youth Small</span>
+            <span><input type="radio" name="Shorts size" value="Youth Medium">Youth Medium</span>
+            <span><input type="radio" name="Jersey size" value="Youth Large">Youth Large</span>
+            <span><input type="radio" name="Jersey size" value="Small">Small</span>
+           </div>
+        <div class="partschool">
+            <span><input type="radio" name="Jersey size" value="Medium">Medium</span>
+            <span><input type="radio" name="Jersey size" value="Large">Large</span>
+            <span><input type="radio" name="Jersey size" value="Extra-Large">Extra-Large</span>
+      </div>
+
+       <div  class="partschool">
+            <span><input type="radio" name="Jersey size" value="Youth Small">Youth Small</span>
+            <span><input type="radio" name="Shorts size" value="Youth Medium">Youth Medium</span>
+            <span><input type="radio" name="Jersey size" value="Youth Large">Youth Large</span>
+            <span><input type="radio" name="Jersey size" value="Small">Small</span>
+       </div>
+
+        <div class="partschool">
+          <span><input type="radio" name="Jersey size" value="Medium">Medium</span>
+          <span><input type="radio" name="Jersey size" value="Large">Large</span>
+          <span><input type="radio" name="Jersey size" value="Extra-Large">Extra-Large</span>
+        </div>
+      </fieldset>
+    </div>  
+
+
+      <div class="headpermission">
+        <fieldset class="fieldarrange">
+          <legend class="permission"><strong>Permission to Play</strong> </legend>
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+            Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+            accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+            employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+            on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+            sponsored activities, which transportation.</p>
+                   <p>By signing below, I hereby agree and authorize the above. In addition, By entering your name below, I also acknowledge that I have read the
+            cancellation policy and agree to its terms. </p>
+            
+          <div class="halfwide">Parent/Guardian Signature:<input type="text" name="signature" required="">
+            <label class="dateson secondhalf">Date:<input type="date" name="date" required=""></label> 
+        </fieldset>
+          </div>
+
+      <button name="submit" value="send">submit registration form ➟ ✉</button>
+    
+   </form>   
+</main>
+
+    
+<footer id="lab_social_icon_footer">
+    <div class="text-center center-block">
+        <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+        <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+        <p class="footertext">Copyright &copy;2019</p>
+        <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
