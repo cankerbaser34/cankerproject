@@ -21,7 +21,7 @@
     <nav id="navbar" >
        <ul>
            <li><a href="indexnysl.html">Home</a></li>
-           <li><a href="">AboutNYSL</a></li>
+           <li><a href="aboutnysl.html">AboutNYSL</a></li>
            <li><a href="contactnysl.html">Contact</a></li>
            <li><a href="gameinfonysl.html">Game Info</a></li>
            <li><a href="rulesnysl.html">Nsyl Rules</a></li>
@@ -72,34 +72,31 @@
     </div>  
     <fieldset class="fieldarrange">
         <legend class="permission"><strong>Which elementary schools do you live near?</strong> </legend>
-        <div class="sizehead sizeheader">
-              <p><strong>First Closest School:</strong></p>
-              <p class="secheader"><strong>Second Closest School:</strong></p>
-      </div>
-  
-    <div class="rowschool">
-       <div class="partschool">
-         <span><input type="radio" name="First Closest School" value="AJ Katzenmaier">AJ Katzenmaier</span>
-         <span><input type="radio" name="First Closest School" value="Greenbay">Greenbay</span>
-         <span><input type="radio" name="First Closest School" value="Howard A Yeager">Howard A Yeager</span>
-        </div>
+        <label class="schoolnear">
+          First Closest School:
+          <select name="firstcloseschool" class="dropdownschool" required="">
+              <option value="" class="hide" selected="" disabled="">Select a School</option>
+              <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+              <option value="Greenbay">Greenbay</option>
+              <option value="Howard A Yeager">Howard A Yeager</option>
+              <option value="Marjorie P Hart">Marjorie P Hart</option>
+              <option value="North Elementary">North Elementary</option>
+              <option value="South Elementary">South Elementary</option>
+          </select>
+      </label>
 
-    <div class="partschool">
-         <span><input type="radio" name="First Closest School" value="Marjorie P Hart">Marjorie P Hart</span>
-         <span> <input type="radio" name="First Closest School" value="North Elementary">North Elementary</span>
-         <span><input type="radio" name="First Closest School" value="South Elementary">South Elementary</span>
-    </div>
-
-    <div class="partschool">
-        <span><input type="radio" name="Second Closest School" value="AJ Katzenmaier">AJ Katzenmaier</span>
-        <span><input type="radio" name="Second Closest School" value="Greenbay">Greenbay</span>
-        <span><input type="radio" name="Second Closest School" value="Howard A Yeager">Howard A Yeager</span>
-    </div>
-      <div class="partschool">
-        <span><input type="radio" name="Second Closest School" value="Marjorie P Hart">Marjorie P Hart</span>
-        <span> <input type="radio" name="First Closest School" value="North Elementary">North Elementary</span>
-        <span><input type="radio" name="First Closest School" value="South Elementary">South Elementary</span>  
-      </div>  
+      <label class="schoolnear">
+        Second Closest School:
+        <select name="secondcloseschool" class="dropdownschool" required="">
+            <option value="" class="hide" selected="" disabled="">Select a School</option>
+            <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+            <option value="Greenbay">Greenbay</option>
+            <option value="Howard A Yeager">Howard A Yeager</option>
+            <option value="Marjorie P Hart">Marjorie P Hart</option>
+            <option value="North Elementary">North Elementary</option>
+            <option value="South Elementary">South Elementary</option>
+        </select>
+    </label>
     </fieldset>  
     </div>         
         <fieldset class="fieldarrange">
@@ -171,7 +168,7 @@
         </fieldset>
           </div>
 
-      <button name="submit" value="send">submit registration form ➟ ✉</button>
+      <button name="submit" value="send">submit registration form</button>
     
    </form>   
 </main>
